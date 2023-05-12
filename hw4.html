@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Example</title>
+</head>
+<body>
+	<h2>Form Example</h2>
+	<form action="https://www.example.com/form-handler" method="GET" target="_blank">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br><br>
+		<button type="submit">Submit</button>
+	</form>
+	<form action="https://www.example.com/form-handler" method="POST" target="_self">
+		<label for="age">Age:</label>
+		<input type="number" id="age" name="age"><br><br>
+		<label for="message">Message:</label>
+		<textarea id="message" name="message"></textarea><br><br>
+		<button type="submit">Submit</button>
+	</form>
+	
+	<h2>Canvas Example</h2>
+	<canvas id="myCanvas" width="300" height="200"></canvas>
+	<script>
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+		ctx.fillStyle = "#FF0000";
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+	</script>
+</body>
+</html>
