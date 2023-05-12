@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enes</title>
+	<style>
+		.logo {
+			border: 2px solid black;
+			width: 200px;
+			opacity: 0.8;
+		}
+
+		.world-map {
+			background-image: linear-gradient(to bottom, #0077b5, #fff);
+			padding: 20px;
+		}
+
+		h1 {
+			color: red;
+		}
+
+		a {
+			color: green;
+		}
+
+		button {
+			background-color: blue;
+			color: white;
+			border: none;
+			padding: 10px;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<img src="logo.png" alt="Company logo" class="logo">
+
+	<div class="world-map">
+		<img src="world-map.png" alt="World map" usemap="#map">
+
+		<map name="map">
+			<area shape="rect" coords="0,0,100,100" href="usa.html">
+			<area shape="circle" coords="200,200,50" href="russia.html">
+			<area shape="poly" coords="300,300,400,400,300,500" href="china.html">
+		</map>
+	</div>
+
+	<h1>Example heading</h1>
+	<p>Merhaba ben enes cankaya</p>
+	<a href="#">Butonum</a>
+	<button>Buton</button>
+</body>
+</html>
