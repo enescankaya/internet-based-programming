@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input Types Example</title>
+  </head>
+  <body>
+    <form>
+      <label for="hidden">Hidden Input:</label>
+      <input type="hidden" id="hidden" name="hidden" value="1234">
+
+      <label for="tel">Telephone Number:</label>
+      <input type="tel" id="tel" name="tel" placeholder="123-456-7890">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="example@example.com">
+
+      <label for="number">Number:</label>
+      <input type="number" id="number" name="number" min="0" max="100" step="1">
+
+      <label for="range">Range:</label>
+      <input type="range" id="range" name="range" min="0" max="100" step="1">
+
+      <label for="search">Search:</label>
+      <input type="search" id="search" name="search" placeholder="Search...">
+
+      <label for="image">Image:</label>
+      <input type="image" id="image" name="image" src="example.png">
+
+      <label for="week">Week:</label>
+      <input type="week" id="week" name="week" value="2023-W20">
+
+      <label for="url">URL:</label>
+      <input type="url" id="url" name="url" placeholder="http://www.example.com">
+
+      <label for="datetime-local">Date and Time:</label>
+      <input type="datetime-local" id="datetime-local" name="datetime-local">
+
+      <label for="month">Month:</label>
+      <input type="month" id="month" name="month" value="2023-05">
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time">
+      
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
