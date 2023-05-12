@@ -1,0 +1,78 @@
+Step 1/4
+STUDENT REGISTRATION FORM
+1.design a webpage using html5
+   the form field contains  Fullname, Email address, Gender, Submit button
+ 
+textbox is a graphical user interface controls
+
+<label>Full name:</label><input type="text"  id="tbFullname"><br>
+Explanation:
+tbfullname is textbox fullname ,br is break
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>student registration form</title></head>
+<body>
+<form>
+<label>email address:</label><input type="email" id="tbemail" name="email"><br>
+<label>password:</label><input type="password" id="tbpwd" name="pwd"><br>
+Explanation:
+every input button must have individual id
+
+Step 2/4
+<label>choose gender</label><input type="radio" id="rdmale" name="gender"><label>male</label><br>
+                                                    
+<input type="radio" id="rdfemale" name="gender"><label>female</label><br>
+</body>
+</html>                                              
+Explanation:
+rdmale is radiobuttonmale
+<input type="submit" id="btnsubmit" value="SUBMIT YOUR DATA">
+
+2.CONNECTION TO A MYSQL DATABASE USING PHP
+<?php>
+$servername="localhost";
+$userrname="username";
+$password="password";
+// connection creation
+$conn= new mysqli($servername,$username,$password);
+
+Step 3/4
+php mysql create table "students"
+
+CREATE TABLE students(
+id INT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+full_name VARCHAR(40) ,
+email VARCHAR(60),
+Gender ENUM('male' , 'female')
+)
+Explanation:
+id is unique value so that we use primary key constraint.in this we define the values in dynamic way.
+    so that we can improve our storage memory
+Step 4/4
+validate form data to PHP script by using the post method
+
+STEPS TO VALIDATE THE FORM
+
+1.when the user clicks the submit button ,we need to check whether the form has been
+ submitting using  $_server["REQUEST_METHOD"].
+ If the request method is the post ,then the form has been submitted. And
+ it should be validated on the server side.
+2.The next step is validate the data .if, data is valid insert the students data into "students" 
+   table in the database.
+Explanation:
+if(FILTER_VALIDATE_IDFILTER_VALIDATE_EMAIL)  is used to validate the data
+3. for Displaying success message using this $("#success-alert").show();
+4.for displaying errors and warnings in php file :
+   ini_set('display_errors',1);
+   ini_set('display_startup_errors',1);
+   error_reporting(E_ALL);
+Final answer
+These all queries represents the student registration form with database integration.
+POST  method in html form is used to collect or submit data using a super global 
+variable.
+$_POST
+POST is supported by HTTP used by the www. 
+USE OF POST METHOD:
+POST method requests the web server and accept the data enclosed by the body and 
+used to storing and uploading a file.
